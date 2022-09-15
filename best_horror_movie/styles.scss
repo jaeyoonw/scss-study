@@ -1,0 +1,153 @@
+@import "_mixins";
+@import "_variables";
+@import "reset";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+}
+
+.header {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 545px;
+  height: 100%;
+  @include devices(laptop) {
+    width: 380px;
+  }
+  @include devices(mobile) {
+    width: 100vw;
+    position: relative;
+  }
+  .module--header {
+    padding: 10vh 0 0 72px;
+    h1 {
+      color: $red;
+      font-size: 7.2rem;
+      font-weight: 400;
+      line-height: 7.2rem;
+      width: 60%;
+      @include devices(laptop) {
+        font-size: 5rem;
+        line-height: 5rem;
+      }
+    }
+  }
+  .module--body {
+    color: $red;
+    font-size: 1.5rem;
+    padding: 72px;
+    @include devices(laptop) {
+      padding: 50px;
+    }
+    .module--interior {
+      p:first-child {
+        font-size: 1.6em;
+        font-weight: 300;
+        margin-bottom: 1em;
+        line-height: 28.8px;
+        text-decoration: none solid rgb(231, 71, 60);
+      }
+      p:nth-child(2) {
+        line-height: 1.4;
+        text-align: justify;
+      }
+      nav {
+        margin-top: 2em;
+        ul {
+          display: grid;
+          grid-template-columns: repeat(3, auto);
+          row-gap: 10px;
+          li {
+            color: black;
+            font-size: 0.9em;
+            opacity: 0.5;
+            cursor: pointer;
+            &:hover {
+              opacity: 1;
+              text-decoration: underline;
+            }
+          }
+        }
+        p {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 1rem;
+          line-height: 1.4;
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  min-height: 100vh;
+  padding-left: 545px;
+  @include devices(laptop) {
+    padding-left: 380px;
+  }
+  @include devices(mobile) {
+    padding-left: 0;
+  }
+  .movie {
+    color: white;
+    .movie__article {
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4) 1%,
+          transparent,
+          transparent,
+          transparent,
+          transparent
+        )
+        $red;
+      padding: 72px;
+      @include devices(laptop) {
+        padding: 54px 48px;
+      }
+      .movie__article--header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 32px;
+        @include devices(laptop) {
+          padding-bottom: 24px;
+        }
+        h2 {
+          font-size: 5rem;
+          padding-right: 1em;
+        }
+        h4 {
+          font-size: 1.3rem;
+          align-self: flex-end;
+          @include devices(laptop) {
+            margin-top: 1em;
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    height: 200px;
+    padding: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
