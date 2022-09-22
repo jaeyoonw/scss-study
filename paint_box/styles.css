@@ -273,8 +273,7 @@ a:hover {
 }
 .content .content__section .journal__tiles .journal__half .journal__content {
   position: absolute;
-  top: 40%;
-  left: 20%;
+  top: 30%;
   padding: 0 80px;
   text-align: center;
 }
@@ -284,11 +283,24 @@ a:hover {
   line-height: 26px;
   margin-bottom: 30px;
 }
+.content .content__section .journal__tiles .journal__half .journal__content p {
+  font-size: 34px;
+}
+.content .content__section .instagram__tiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 280px);
+  padding: 140px;
+}
+.content .content__section .instagram__tiles .instagram__tile img {
+  width: 100%;
+  height: 100%;
+}
 
 .footer {
   background-color: #f3ede8;
   font-size: 10px;
-  padding: 65px;
+  padding: 45px;
   bottom: 0;
   width: 100%;
 }
