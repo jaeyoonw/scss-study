@@ -1,0 +1,246 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.gutter {
+  color: #000;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+}
+
+a,
+.gutter {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-weight: normal;
+  line-height: 1rem;
+}
+
+.header {
+  z-index: 1;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  font-size: 32px;
+  display: flex;
+}
+.header .nav1 {
+  display: flex;
+  width: 66.66%;
+  height: 100%;
+  cursor: pointer;
+}
+.header .nav1 a {
+  display: flex;
+  align-items: center;
+  width: 16%;
+  height: 100%;
+}
+.header .nav1 a:hover {
+  color: white;
+}
+.header .nav1 a:hover + ul {
+  color: black;
+}
+.header .nav1 ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #d9dadb;
+}
+.header .nav1 ul li {
+  margin-right: 50px;
+}
+.header .nav1 ul:hover {
+  color: white;
+}
+.header .nav1:hover {
+  background-color: #e0e1e2;
+}
+.header .nav2 {
+  width: 33.33%;
+  height: 100%;
+  cursor: pointer;
+}
+.header .nav2 ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .nav2 ul li {
+  margin-right: 50px;
+}
+.header .nav2 ul:first-child {
+  margin-left: 10px;
+}
+.header .nav2:hover {
+  background-color: #d9dadb;
+}
+
+.main {
+  padding-top: 3rem;
+}
+.main section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main section a {
+  width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+}
+.main section a img {
+  height: 40vh;
+}
+.main section a span {
+  font-size: 14px;
+}/*# sourceMappingURL=styles.css.map */
