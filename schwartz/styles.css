@@ -1,0 +1,356 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+}
+
+body {
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  height: 108px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+.header .logo {
+  text-decoration: none;
+  color: black;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 10rem;
+  padding: 3rem 0;
+}
+
+.container {
+  margin-top: 108px;
+  margin: 0 10rem;
+  padding: 5vh 5vw;
+}
+.container .intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 0;
+}
+.container .intro .home-text {
+  font-size: 3.4rem;
+}
+.container .intro .intro--title {
+  padding-top: 3rem;
+}
+.container .intro .intro--text {
+  margin-top: 8rem;
+  margin-bottom: 15rem;
+}
+.container .intro .intro--text p {
+  font-weight: 200;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+}
+.container .intro .intro--text .home-link {
+  display: inline-block;
+  margin-top: 3rem;
+  font-size: 2.4rem;
+}
+.container .products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container .products .product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: span 2;
+  border-top: 1px solid #dadada;
+  padding: 20px 0;
+}
+.container .products .product .product-left h2,
+.container .products .product .product-right h2 {
+  font-size: 25px;
+  margin-bottom: 1.5em;
+}
+.container .products .product .product-left p,
+.container .products .product .product-right p {
+  font-size: 34px;
+  margin-bottom: 4em;
+}
+.container .products .product .product-left a,
+.container .products .product .product-right a {
+  font-size: 1.8rem;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+.container .products .product .product-left a:hover,
+.container .products .product .product-right a:hover {
+  background-color: black;
+  color: white;
+}
+.container .products .product:last-child p {
+  font-size: 2.4rem;
+  margin-top: 10px;
+  margin-bottom: 36px;
+}
+.container .products .product:nth-child(2) .product-left, .container .products .product:nth-child(4) .product-left {
+  order: 1;
+}
+.container .line {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  padding: 20px 0;
+}
+.container .line h2 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.container .line p {
+  font-size: 34px;
+  margin-bottom: 80px;
+}
+.container .line a {
+  font-size: 1.8rem;
+  font-size: 1.8rem;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+.container .line a:hover {
+  background-color: black;
+  color: white;
+}
+.container .gifts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px 0;
+}
+.container .gifts .gift {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container .gifts .gift h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+.container .gifts .gift img {
+  margin-bottom: 20px;
+}
+.container .gifts .gift p {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+.container .gifts .gift a {
+  font-size: 1.8rem;
+  font-size: 1.8rem;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+.container .gifts .gift a:hover {
+  background-color: black;
+  color: white;
+}
+.container .menus {
+  margin-bottom: 70px;
+  border-top: 1px solid #dadada;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container .menus h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+.container .menus p {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+.container .menus a {
+  font-size: 1.8rem;
+  font-size: 1.8rem;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+.container .menus a:hover {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  background-color: #464646;
+  padding: 3vh 5vw 1vh;
+}
+.footer .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.footer .grid .row-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .grid .row-flex a {
+  font-size: 1.6rem;
+}
+.footer h2,
+.footer p,
+.footer a {
+  color: white;
+}
+.footer h2 {
+  font-size: 3.4rem;
+  margin-bottom: 70px;
+}
+.footer p {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=styles.css.map */
